@@ -17,7 +17,7 @@ public class Conta { //criando uma classe Conta
   void deposito (double quantidade) { //metodo deposito
   	this.saldo += quantidade;
   }
-  void transfere (Conta destino, double valor) {
+  void transfere (Conta destino, double valor) { //metodo de tranferencia
   	this.saldo = this.saldo - valor;
     destino.saldo = destino.saldo + valor;
   }
@@ -37,7 +37,7 @@ public class Programa {
     conta1 = new Conta ();
     conta1.numero = 1999;
     conta1.titular.nome = "Gabriela";
-    conta1.titular.sobrenome = "Saito (hehe)";
+    conta1.titular.sobrenome = "Lara";
     conta1.saldo = 9000;
     conta1.transfere (minhaConta, 1000);
     System.out.println(conta1.titular.sobrenome);
